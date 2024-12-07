@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="logo.png" alt="Netflix Logo">
+        </div>
+        <div class="form_wrapper">
+            <div class="form">
+                <div class="sign">
+                    <h2>Sign In</h2>
+                </div>
+                <div class="email">
+                    <input type="text" placeholder="Email or Phone number" required>
+                </div>
+                <div class="email" id="active">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="btn">
+                    <button>Sign In</button>
+                </div>
+                <div class="radio">
+                    <label for="remember-me">
+                        <input type="checkbox" id="remember-me"><span id="one">&nbsp;&nbsp;Remember me</span> 
+                    </label>
+                    <a href="#">Need help?</a>
+                </div>
+                <div class="text">
+                    <h2>New to Netflix? <a href="#" id="link">Sign up now</a></h2>
+                    <p>This page is protected by Google CAPTCHA to <br> ensure you're not a bot. <a href="#" id="link2">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- JavaScript for checkbox functionality -->
+    <script>
+        // JavaScript to handle the checkbox behavior
+        const rememberMeCheckbox = document.getElementById('remember-me');
+
+        // When the checkbox is clicked
+        rememberMeCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Remember me is checked.");
+            } else {
+                console.log("Remember me is unchecked.");
+            }
+        });
+
+        // Optional: You can save the checkbox state to localStorage to remember the user's choice across sessions
+        if (localStorage.getItem('rememberMe') === 'true') {
+            rememberMeCheckbox.checked = true; // Restore checked state
+        }
+
+        // Store checkbox state when it changes
+        rememberMeCheckbox.addEventListener('change', function() {
+            localStorage.setItem('rememberMe', this.checked);
+        });
+    </script>
+</body>
+</html>

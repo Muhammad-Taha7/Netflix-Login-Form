@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background\ image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+}
+
+.nav img {
+    height: 100%;
+    margin: 40px 80px;
+}
+.form_wrapper{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 100%;
+    max-width: 400px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.sign {
+    margin-bottom: 30px;
+}
+
+.sign h2 {
+    font-size: 2rem;
+    color: white;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.email {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.email input {
+    width: 100%;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+   
+}
+
+.email input::placeholder {
+    color: white;
+}
+
+#active {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.btn button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.75s;
+}
+
+.btn button:hover {
+    background-color: darkred;
+}
+
+.radio {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.radio a {
+    margin-left: 120px;
+    color: white;
+}
+
+#one {
+    color: white;
+}
+
+.text {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.text h2 {
+    font-size: 1.2rem;
+    color: gainsboro;
+}
+
+.text p {
+    font-size: 0.9rem;
+    color: gainsboro;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
+
+#link:hover {
+    border-bottom: 2px solid white;
+}
+
+#link2 {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
